@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "AppCoder",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            "C:\ProyectoCoder\MVTCesarBrousset\AppCoder\templates"
+            f"{BASE_DIR}/ProyectoCoder\MVTCesarBrousset\AppCoder\templates"
             ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -64,7 +65,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                            ],
+            ],
         },
     },
 ]

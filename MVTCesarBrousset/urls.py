@@ -16,16 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from AppCoder.views import saludo
-
-from AppCoder.views import saludo_con_nombre
-from AppCoder.views import saludo_con_template
+from AppCoder.views import mostrar_inicio
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path('saludo/', saludo),
-    path('saludar-usuario/<nombre>/<edad>', saludo_con_nombre),
-    path('saludar-contemplado/', saludo_con_template),
+     path("inicio/", mostrar_inicio)
 ]
 
-saludo_con_template
