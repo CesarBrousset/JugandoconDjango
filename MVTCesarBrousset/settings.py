@@ -55,9 +55,7 @@ ROOT_URLCONF = "MVTCesarBrousset.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [
-            f"{BASE_DIR}/ProyectoCoder\MVTCesarBrousset\AppCoder\templates"
-            ],
+        "DIRS": [f"{BASE_DIR}/ProyectoCoder\MVTCesarBrousset\AppCoder\templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
